@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Projects/Hotel%20Booking%20Main/Final/app/page.tsx"],"sourcesContent":["// 'use client'\n\n// import AppRouter from '@/components/app-router'\n\n// export default function Page() {\n//   return <AppRouter />\n// }\n\n\n// \"use client\";\n\n// export default function Page() {\n//   return (\n//     <div className=\"p-6\">\n//       <h1 className=\"text-3xl font-bold\">Landing Page</h1>\n//       <p className=\"mt-2\">Welcome to Luxe Hotels</p>\n//     </div>\n//   );\n// }\n\n\n\"use client\";\n\nexport default function Page() {\n  return (\n    <div className=\"pt-28 p-6\">   {/* <-- ⭐ Added padding-top */}\n      <h1 className=\"text-3xl font-bold\">Welcome to Luxe Hotels</h1>\n      <p>This is the landing page.</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":"AAAA,eAAe;AAEf,kDAAkD;AAElD,mCAAmC;AACnC,yBAAyB;AACzB,IAAI;AAGJ,gBAAgB;AAEhB,mCAAmC;AACnC,aAAa;AACb,4BAA4B;AAC5B,6DAA6D;AAC7D,uDAAuD;AACvD,aAAa;AACb,OAAO;AACP,IAAI;;;;;;AAGJ;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;YAAY;0BACzB,8OAAC;gBAAG,WAAU;0BAAqB;;;;;;0BACnC,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 13, "column": 0}, "map": {"version":3,"sources":["file:///D:/Projects/Hotel%20Booking%20Main/Final/app/page.tsx"],"sourcesContent":["// 'use client'\n\n// import AppRouter from '@/components/app-router'\n\n// export default function Page() {\n//   return <AppRouter />\n// }\n"],"names":[],"mappings":"AAAA,eAAe;AAEf,kDAAkD;AAElD,mCAAmC;AACnC,yBAAyB;AACzB,IAAI"}}]
+}

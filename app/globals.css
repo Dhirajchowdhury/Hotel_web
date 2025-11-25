@@ -1,0 +1,276 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette for luxury hotel booking with beige, pinkish, and white tones */
+  --background: oklch(0.98 0.01 70);
+  --foreground: oklch(0.2 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0 0);
+  --primary: oklch(0.88 0.05 45);
+  --primary-foreground: oklch(0.2 0 0);
+  --secondary: oklch(0.92 0.03 30);
+  --secondary-foreground: oklch(0.2 0 0);
+  --muted: oklch(0.95 0.01 70);
+  --muted-foreground: oklch(0.55 0 0);
+  --accent: oklch(0.78 0.08 25);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.93 0.01 70);
+  --input: oklch(0.97 0.01 70);
+  --ring: oklch(0.8 0.05 45);
+  --chart-1: oklch(0.78 0.08 25);
+  --chart-2: oklch(0.88 0.05 45);
+  --chart-3: oklch(0.92 0.03 30);
+  --chart-4: oklch(0.85 0.04 40);
+  --chart-5: oklch(0.75 0.07 20);
+  --radius: 0.625rem;
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.2 0 0);
+  --sidebar-primary: oklch(0.88 0.05 45);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.78 0.08 25);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.93 0.01 70);
+  --sidebar-ring: oklch(0.8 0.05 45);
+}
+
+.dark {
+  --background: oklch(0.15 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.2 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.2 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.88 0.05 45);
+  --primary-foreground: oklch(0.2 0 0);
+  --secondary: oklch(0.3 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.35 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.78 0.08 25);
+  --accent-foreground: oklch(0.2 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.3 0 0);
+  --input: oklch(0.25 0 0);
+  --ring: oklch(0.88 0.05 45);
+  --chart-1: oklch(0.78 0.08 25);
+  --chart-2: oklch(0.88 0.05 45);
+  --chart-3: oklch(0.92 0.03 30);
+  --chart-4: oklch(0.85 0.04 40);
+  --chart-5: oklch(0.75 0.07 20);
+  --sidebar: oklch(0.2 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.88 0.05 45);
+  --sidebar-primary-foreground: oklch(0.2 0 0);
+  --sidebar-accent: oklch(0.78 0.08 25);
+  --sidebar-accent-foreground: oklch(0.2 0 0);
+  --sidebar-border: oklch(0.3 0 0);
+  --sidebar-ring: oklch(0.88 0.05 45);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add glassmorphism effect utilities */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/40 dark:bg-black/30 border border-white/20 dark:border-white/10;
+}
+
+.glass-effect-strong {
+  @apply backdrop-blur-lg bg-white/50 dark:bg-black/40 border border-white/30 dark:border-white/15;
+}
+/* ================================
+   FLOATING BLOB BACKGROUND
+   ================================ */
+
+.background-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: -3; /* Behind grain + overlay */
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.40;
+  filter: blur(100px);
+  animation: floatBlob 20s ease-in-out infinite;
+}
+
+/* LIGHT MODE COLORS — using your theme */
+.blob1 {
+  background: var(--accent);
+  width: 380px;
+  height: 380px;
+  top: -120px;
+  left: -80px;
+}
+.blob2 {
+  background: var(--primary);
+  width: 330px;
+  height: 330px;
+  bottom: -140px;
+  right: -60px;
+}
+.blob3 {
+  background: var(--secondary);
+  width: 280px;
+  height: 280px;
+  top: 40%;
+  left: 60%;
+}
+
+@keyframes floatBlob {
+  0% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(70px,-60px) scale(1.15); }
+  50% { transform: translate(-70px,50px) scale(0.9); }
+  75% { transform: translate(-40px,-80px) scale(1.1); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+/* DARK MODE BLOB COLORS */
+.dark .blob1 { background: oklch(0.45 0.07 330); }
+.dark .blob2 { background: oklch(0.60 0.08 20); }
+.dark .blob3 { background: oklch(0.50 0.06 260); }
+
+/* ======================================
+   SOFT GRADIENT OVERLAY
+   ====================================== */
+
+.soft-gradient {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255,245,240,0.4),
+    rgba(255,225,235,0.35),
+    rgba(255,240,250,0.4)
+  );
+  z-index: -2;
+  pointer-events: none;
+}
+
+.dark .soft-gradient {
+  background: linear-gradient(
+    120deg,
+    rgba(25,15,35,0.45),
+    rgba(35,15,45,0.4),
+    rgba(20,10,35,0.45)
+  );
+}
+
+/* ===========================
+   PREMIUM HIGH-RES GRAIN
+   =========================== */
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35; /* stronger visibility */
+  background-image: url("data:image/svg+xml,%3Csvg width='300' height='300' viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.10'%3E%3Ccircle cx='5' cy='5' r='1'/%3E%3Ccircle cx='40' cy='35' r='1.2'/%3E%3Ccircle cx='120' cy='160' r='0.9'/%3E%3Ccircle cx='200' cy='90' r='1.3'/%3E%3Ccircle cx='250' cy='210' r='1.1'/%3E%3Ccircle cx='80' cy='250' r='0.8'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+}
+/* ======================================
+   SMALL FLOATING BUBBLES BACKGROUND
+   ====================================== */
+
+.bubbles-container {
+  position: fixed;
+  inset: 0;
+  z-index: -2; /* Above blobs, below grain */
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Each bubble */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.22;
+  animation: bubbleFloat var(--speed) infinite ease-in-out;
+  filter: blur(2px);
+}
+
+/* Dark mode bubbles */
+.dark .bubble {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Bubble movement animation */
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) scale(1.15);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+#reviews-section {
+  position: relative;
+  overflow: hidden;
+}
+

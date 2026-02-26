@@ -32,7 +32,7 @@ export default function Contact() {
         <div>
           <h2 className="text-4xl font-bold text-foreground mb-6">Get in Touch</h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            Have questions about our luxury hotels or need assistance with your booking? Our dedicated team is here to help you plan the perfect stay.
+            Have questions about our Hotels or need assistance with your booking? Our dedicated team is here to help you plan the perfect stay.
           </p>
 
           <div className="space-y-6">

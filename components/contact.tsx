@@ -194,7 +194,7 @@ export default function Contact() {
 
         <div className="flex items-center justify-between pt-8 border-t border-border text-sm text-muted-foreground">
          
-           <p className="pt-8 border-t border-border text-sm text-muted-foreground text-center w-full">© 2025 Luxe Hotels. All rights reserved.</p>
+           <p className="pt-8 border-t border-border text-sm text-muted-foreground text-center w-full">© 2026 Hotels. All rights reserved.</p>
           
           <div className="flex gap-4">
             <a href="#" className="hover:text-accent transition-colors">Twitter</a>
